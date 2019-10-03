@@ -1,7 +1,22 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
+ body {
+    background-color: #BD96CA;
+}
+ h1 {
+    color: #441154;
+}
+ h2 {
+    color: #441154;}
 
-body { background-color: #BD96CA; }
-
-h1 { color: #441154; }
-h2 { color: #441154; }
-
+ a {
+    color: #900E0E;
+}
+ nav a {
+    color: #247F83;
+}
+ .byline {
+    color: rgba(0,0,255,0.5);
+}
+ #page-copyright {
+    color: #900E0E;
+}
