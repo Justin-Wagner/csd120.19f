@@ -1,22 +1,32 @@
 @charset "UTF-8";
- body {
+body {
     background-color: #BD96CA;
 }
- h1 {
-    color: #441154;
-}
- h2 {
-    color: #441154;}
 
- a {
+h1 {
+    color: #441154;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+}
+
+h2 {
+    color: #441154;
+    background-image: url("../images/gradient.png");
+    background-repeat: repeat-x;
+}
+
+a {
     color: #900E0E;
 }
- nav a {
+
+nav a {
     color: #247F83;
 }
- .byline {
+
+.byline {
     color: rgba(0,0,255,0.5);
 }
- #page-copyright {
+
+#page-copyright {
     color: #900E0E;
 }
