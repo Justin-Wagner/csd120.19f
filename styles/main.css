@@ -1,32 +1,56 @@
 @charset "UTF-8";
 body {
     background-color: #BD96CA;
+    font-family: "Open Sans", sans-serif;
 }
 
 h1 {
     color: #441154;
+    font-family: "Proza Libre", sans-serif;
     background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
 }
 
 h2 {
     color: #441154;
+    font-family: "Proza Libre", sans-serif;
     background-image: url("../images/gradient.png");
     background-repeat: repeat-x;
 }
 
 a {
     color: #900E0E;
+    text-decoration: none;
 }
 
 nav a {
     color: #247F83;
+    text-decoration: none;
 }
 
 .byline {
     color: rgba(0,0,255,0.5);
+    font-size: 70%;
 }
 
 #page-copyright {
     color: #900E0E;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+section.bio p {
+    text-indent: 3em;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+ul {
+    list-style-type: square;
 }
