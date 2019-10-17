@@ -46,6 +46,7 @@ section.bio p {
 footer {
     text-align: center;
     font-size: 12px;
+    margin-bottom: 2em;
 }
 
 nav ul {
@@ -53,4 +54,11 @@ nav ul {
 }
 ul {
     list-style-type: square;
+}
+
+.width-wrap {
+    max-width: 1024px;
+    margin: auto;
+    margin-bottom: 3em;
+    padding: 0 2em;
 }
