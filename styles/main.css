@@ -5,17 +5,21 @@ body {
 }
 
 h1 {
-    color: #441154;
+    color: transparent;
     font-family: "Proza Libre", sans-serif;
-    background-image: url("../images/gradient.png");
-    background-repeat: repeat-x;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    -webkit-background-clip: text;
+    background-image: linear-gradient(180deg, rgba(146,62,161,1) 25%, rgba(0,0,0,1) 100%);
+     
+    
 }
 
 h2 {
-    color: #441154;
+    color: transparent;
     font-family: "Proza Libre", sans-serif;
-    background-image: url("../images/gradient.png");
-    background-repeat: repeat-x;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    -webkit-background-clip: text;
+    background-image: linear-gradient(180deg, rgba(146,62,161,1) 25%, rgba(0,0,0,1) 100%);
 }
 
 a {
@@ -61,4 +65,16 @@ ul {
     margin: auto;
     margin-bottom: 3em;
     padding: 0 2em;
+    border: 1px solid rgba(0,0,0,0.3);
+    background-color: #CCCCEE;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+}
+
+figure img {
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+}
+
+footer hr {
+    width: 50%;
+    
 }
