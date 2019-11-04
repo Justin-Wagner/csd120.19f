@@ -9,9 +9,7 @@ h1 {
     font-family: "Proza Libre", sans-serif;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     -webkit-background-clip: text;
-    background-image: linear-gradient(180deg, rgba(146,62,161,1) 25%, rgba(0,0,0,1) 100%);
-     
-    
+    background-image: linear-gradient(180deg, rgba(146,62,161,1) 25%, rgba(0,0,0,1) 100%);    
 }
 
 h2 {
@@ -89,4 +87,17 @@ footer hr {
     border-top-right-radius: 8px;
     border-left: none;
     border-right: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mugshot .paperclip {
+    background-image: url(../images/paperclip.png);
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    position: absolute;
+    
 }
