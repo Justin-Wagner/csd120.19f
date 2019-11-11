@@ -65,7 +65,8 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    float: right;
+    display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -124,10 +125,6 @@ footer hr {
     clear: right;
 }
 
-nav ul li {
-    float: left;
-}
-
 nav {
     overflow: auto;
     margin-left: 2em;
@@ -155,4 +152,14 @@ div.back-to-top {
 .back-to-top a {
     position: fixed;
     bottom: 3.5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2em;
+}
+
+.bio {
+    grid-column: 1 / span 2;
 }
