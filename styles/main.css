@@ -2,6 +2,8 @@
 body {
     background-color: #BD96CA;
     font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    display: flex;
 }
 
 h1 {
@@ -76,6 +78,7 @@ ul {
 .width-wrap {
     max-width: 1024px;
     margin: auto;
+    margin-top: 0;
     margin-bottom: 3em;
     padding: 0 2em;
     border: 1px solid rgba(0,0,0,0.3);
@@ -161,5 +164,13 @@ main {
 }
 
 .bio {
+    grid-column: 1 / span 2;
+}
+
+.glossary {
+    grid-column: 1 / span 2;
+}
+
+.useful-links {
     grid-column: 1 / span 2;
 }
