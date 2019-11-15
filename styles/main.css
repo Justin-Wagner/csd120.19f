@@ -61,6 +61,7 @@ footer {
     text-align: center;
     font-size: 12px;
     margin-bottom: 2em;
+    margin-top: auto;
 }
 
 nav ul {
@@ -85,6 +86,8 @@ ul {
     border-top: none;
     background-color: #CCCCEE;
     box-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
 }
 
 figure img {
@@ -173,4 +176,31 @@ main {
 
 .useful-links {
     grid-column: 1 / span 2;
+}
+
+section.gallery {
+    grid-column: span 2;
+    width: 100%
+}
+
+div.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+div.gallery-thumbnails a {
+    width: 100%;
+}
+
+div.gallery-thumbnails img {
+    width: 100%;
+    display: block;
+}
+
+.row-span-2 {
+    grid-row: span 2;
+}
+
+.col-span-2 {
+    grid-column: span 2;
 }
