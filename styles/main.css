@@ -204,3 +204,74 @@ div.gallery-thumbnails img {
 .col-span-2 {
     grid-column: span 2;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.burger {
+    display: none;
+    width: 40px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 5px solid rgb(146,62,161);
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.burger::before{
+    content: "";
+    display: none;
+    width: 40px;
+    height: 25px;
+    border-top: 5px solid rgb(146,62,161);
+    position: absolute;
+}
+
+@media screen and (max-width: 768px) {
+    footer hr {
+        display: none;
+    }
+    
+    .paperclip {
+        display: none;
+    }
+    
+    .mugshot {
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    main {
+        display: block;
+    }
+    
+    .row-span-2.col-span-2 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+    }
+    
+    nav a {
+        border: none;
+    }
+    
+    nav a:hover {
+        border: none;
+        text-decoration: underline;
+    }
+    
+    .burger {
+        display: block;
+        
+    }
+}
