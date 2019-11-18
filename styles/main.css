@@ -162,7 +162,7 @@ div.back-to-top {
 
 main {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     column-gap: 2em;
 }
 
@@ -174,7 +174,7 @@ main {
     grid-column: 1 / span 2;
 }
 
-.useful-links {
+#useful-links {
     grid-column: 1 / span 2;
 }
 
