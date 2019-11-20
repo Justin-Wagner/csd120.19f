@@ -276,7 +276,6 @@ img {
     .burger,
     .burger::before,
     .burger::after {
-        display: block;
-        
+        display: block;     
     }
 }
