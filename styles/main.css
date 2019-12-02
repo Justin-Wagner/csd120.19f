@@ -263,6 +263,11 @@ tr:nth-of-type(7) {
     border-top: 3px solid #CCCCEE;
 }
 
+section.survey {
+    display: grid;
+    grid-column: span 2;
+}
+
 @media screen and (max-width: 768px) {
     footer hr {
         display: none;
