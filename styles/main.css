@@ -233,6 +233,36 @@ img {
 .burger::before { top: 5px; }
 .burger::after { top: 15px;}
 
+table {
+    border-collapse: collapse;
+}
+
+th,td {
+    background-color: rgba(0,0,0,0.05);
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-right: 3px solid #CCCCEE;
+    border-left: 3px solid #CCCCEE;
+}
+
+th {
+    background-color: rgba(0,0,0,0.1);
+}
+
+tr:nth-of-type(odd) {
+    background-color: rgba(0,0,0,0.1);
+}
+
+tr:nth-of-type(2) {
+    border-top: 3px solid #CCCCEE;
+}
+
+tr:nth-of-type(7) {
+    border-top: 3px solid #CCCCEE;
+}
+
 @media screen and (max-width: 768px) {
     footer hr {
         display: none;
