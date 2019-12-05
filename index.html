@@ -126,22 +126,29 @@
                         <a href="https://picsum.photos/id/137/1024"><img src="https://picsum.photos/id/137/300" alt="Placeholder Image"></a>
                         <a href="https://picsum.photos/id/134/1024"><img src="https://picsum.photos/id/134/300" alt="Placeholder Image"></a>
                         <a href="https://picsum.photos/id/159/1024"><img src="https://picsum.photos/id/159/300" alt="Placeholder Image"></a>
-                        
                     </div>
                 </section>
                 <section class="survey">
                     <h2>Survey</h2>
                     <form>
-                        What is your name?<br>
-                        <input type="text" name="name_field" required><br>
-                        What is your email?<br>
-                        <input type="email" name="email_field" required><br>
-                        Which integer is best?<br>
-                        <input type="number" name="best_integer"><br>
-                        Which day is best?<br>
-                        <input type="date" name="best_day"><br>
-                        Which bear is best?<br>
-                        <input>
+                        <label for="name">What is your name?</label>
+                        <input type="text" name="name_field" required>
+                        <label for="email">What is your email?</label>
+                        <input type="email" name="email_field" required>
+                        <label for="integer">Which integer is best?</label>
+                        <input type="number" name="best_integer">
+                        <label for="day">Which day is best?</label>
+                        <input type="date" name="best_day">
+                        <label for="bear">Which bear is best?</label>
+                        <select name="best_bear">
+                            <option value="blank"></option>
+                            <option value="black">Black</option>
+                            <option value="brown">Brown</option>
+                            <option value="care">Care</option>
+                            <option value="panda">Panda</option>
+                            <option value="polar">Polar</option>
+                            <option value="teddy">Teddy</option>
+                        </select>
                     </form>
                 </section>
             </main>
