@@ -4,6 +4,8 @@
         <meta name="viewport" content="width=device-width", initial-scale=1.0>
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
+        <script src="styles/baguetteBox.js"></script>
+        <link rel="stylesheet" href="styles/baguetteBox.css">
         <meta charset="utf-8">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,7 +22,8 @@
         <div class="width-wrap">
             <header id="top">
                 <nav>
-                    <div class="burger"></div>
+                    <label class="burger" for="burger-toggle"></label>
+                    <input type="checkbox" id="burger-toggle">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="links.html">Links</a></li>
@@ -130,7 +133,7 @@
                 </section>
                 <section class="survey">
                     <h2>Survey</h2>
-                    <form>
+                    <form action="https://formspree.io/xwkpyowg" method="POST">
                         <label for="name">What is your name?</label>
                         <input type="text" name="name_field" required>
                         <label for="email">What is your email?</label>
@@ -149,6 +152,15 @@
                             <option value="polar">Polar</option>
                             <option value="teddy">Teddy</option>
                         </select>
+                        <label>Do you like radio buttons?</label>
+                        <label>Yes</label>
+                            <input type="radio" name="radio" value="yes">
+                        <label>No</label>
+                            <input type="radio" name="radio" value="no">
+                        <label>None of your business</label>
+                            <input type="radio" name="radio" value="?" checked>
+                        <textarea name="life_meaning" rows="10" placeholder="Enter the correct answer here"></textarea>
+                        <button type="submit" value="submit">SEND</button>
                     </form>
                 </section>
             </main>
@@ -165,5 +177,10 @@
                 <a href="#top">◤</a>
             </div>
         </div>
+        <script>
+            baguetteBox.run('.gallery-thumbnails', {
+                filter: /picsum\.photos\/id/i
+            });
+        </script>
     </body>
 </html>

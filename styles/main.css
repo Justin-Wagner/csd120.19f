@@ -11,7 +11,7 @@ h1 {
     font-family: "Proza Libre", sans-serif;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
     -webkit-background-clip: text;
-    background-image: linear-gradient(180deg, rgba(146,62,161,1) 25%, rgba(0,0,0,1) 100%);    
+    background-image: linear-gradient(180deg, rgba(146,62,161,1) 25%, rgba(0,0,0,1) 100%);
 }
 
 h2 {
@@ -268,49 +268,78 @@ section.survey {
     grid-column: span 2;
 }
 
+form {
+    display: grid;
+}
+
+label {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+button {
+    margin-top: 1em;
+    justify-self: end;
+    font-size: 24px;
+    padding: 1em 2em;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: white;
+}
+
+#burger-toggle {
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
     footer hr {
         display: none;
     }
-    
+
     .paperclip {
         display: none;
     }
-    
+
     .mugshot {
         float: none;
         margin-left: 0;
         margin-right: 0;
     }
-    
+
     main {
         display: block;
     }
-    
+
     .row-span-2.col-span-2 {
         grid-column: span 1;
         grid-row: span 1;
     }
-    
+
     nav ul {
         flex-direction: column;
-        padding-top: 1em;
-        padding-bottom: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
         text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: height 500ms;
     }
-    
+
+    #burger-toggle:checked ~ ul {
+        height: 115px;
+    }
+
     nav a {
         border: none;
     }
-    
+
     nav a:hover {
         border: none;
         text-decoration: underline;
     }
-    
+
     .burger,
     .burger::before,
     .burger::after {
-        display: block;     
+        display: block;
     }
 }
