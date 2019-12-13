@@ -239,10 +239,10 @@ table {
 
 th,td {
     background-color: rgba(0,0,0,0.05);
-    margin-top: 0.3em;
-    margin-bottom: 0.3em;
-    margin-right: 1em;
-    margin-left: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-right: 1em;
+    padding-left: 1em;
     border-right: 3px solid #CCCCEE;
     border-left: 3px solid #CCCCEE;
 }
@@ -251,7 +251,7 @@ th {
     background-color: rgba(0,0,0,0.1);
 }
 
-tr:nth-of-type(odd) {
+tr:nth-of-type(odd) td {
     background-color: rgba(0,0,0,0.1);
 }
 
@@ -341,5 +341,19 @@ button {
     .burger::before,
     .burger::after {
         display: block;
+        transition: all 200ms ease-in-out;
+    }
+
+    #burger-toggle:checked ~ .burger {
+        transform: translate(-5px, 10px) rotate(45deg);
+    }
+
+    #burger-toggle:checked ~ .burger::before {
+
+        opacity: 0;
+    }
+
+    #burger-toggle:checked ~ .burger::after {
+        transform: translateY(-20px) rotate(-90deg);
     }
 }
