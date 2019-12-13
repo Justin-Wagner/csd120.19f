@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/main.css">
         <script src="styles/baguetteBox.js"></script>
@@ -22,8 +22,8 @@
         <div class="width-wrap">
             <header id="top">
                 <nav>
-                    <label class="burger" for="burger-toggle"></label>
                     <input type="checkbox" id="burger-toggle">
+                    <label class="burger" for="burger-toggle"></label>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="links.html">Links</a></li>
@@ -135,15 +135,15 @@
                     <h2>Survey</h2>
                     <form action="https://formspree.io/xwkpyowg" method="POST">
                         <label for="name">What is your name?</label>
-                        <input type="text" name="name_field" required>
+                        <input id="name" type="text" name="name_field" required>
                         <label for="email">What is your email?</label>
-                        <input type="email" name="email_field" required>
+                        <input id="email" type="email" name="email_field" required>
                         <label for="integer">Which integer is best?</label>
-                        <input type="number" name="best_integer">
+                        <input id="integer" type="number" name="best_integer">
                         <label for="day">Which day is best?</label>
-                        <input type="date" name="best_day">
+                        <input id="day" type="date" name="best_day">
                         <label for="bear">Which bear is best?</label>
-                        <select name="best_bear">
+                        <select id="bear" name="best_bear">
                             <option value="blank"></option>
                             <option value="black">Black</option>
                             <option value="brown">Brown</option>
@@ -153,13 +153,11 @@
                             <option value="teddy">Teddy</option>
                         </select>
                         <label>Do you like radio buttons?</label>
-                        <label>Yes</label>
-                            <input type="radio" name="radio" value="yes">
-                        <label>No</label>
-                            <input type="radio" name="radio" value="no">
-                        <label>None of your business</label>
-                            <input type="radio" name="radio" value="?" checked>
-                        <textarea name="life_meaning" rows="10" placeholder="Enter the correct answer here"></textarea>
+                        <label><input type="radio" name="radio" value="yes"> Yes</label>
+                        <label><input type="radio" name="radio" value="no"> No</label>
+                        <label><input type="radio" name="radio" value="?" checked> None of your business</label>
+                        <label for="life">What is the meaning of life?</label>
+                        <textarea id="life" name="life_meaning" rows="10" placeholder="Enter the correct answer here"></textarea>
                         <button type="submit" value="submit">SEND</button>
                     </form>
                 </section>
@@ -171,7 +169,7 @@
                     <span class="byline">&mdash; <em>Albert Einstein</em></span>
                 </blockquote>
                 <p id="page-copyright">&copy; 2019 <a href="mailto:justin.wagner@student.saultcollege.ca?subject=Message%20from%20CSD120%20Website">Justin Wagner</a></p>
-                <img srcset="images/sc-logo.png 70w, images/sc-logo@1.5x.png 105w, images/sc-logo@2x.png 140w, images/sc-logo@3x.png 210w, images/sc-logo@4x.png 280w" src="images/sc-logo.png">
+                <img sizes="70px" srcset="images/sc-logo.png 70w, images/sc-logo@1.5x.png 105w, images/sc-logo@2x.png 140w, images/sc-logo@3x.png 210w, images/sc-logo@4x.png 280w" src="images/sc-logo.png"  alt="Sault College Logo">
             </footer>
             <div class="back-to-top">
                 <a href="#top">◤</a>
